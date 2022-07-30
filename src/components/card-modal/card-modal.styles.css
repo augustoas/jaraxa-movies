@@ -1,0 +1,97 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+
+
+  }
+  
+  .modal.enter-done {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  
+  .modal.exit {
+    opacity: 0;
+  }
+  
+  .modal-content {
+    width: 80%;
+    height: 500px;    
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    text-shadow: 1px 1px 2px #000000, 1px 1px 2px #000000, 1px 1px 2px #000000;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+
+  .modal-left {
+    color: white;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    padding: 15px;
+  }
+
+  .movie-image {
+    width: 100px;
+    margin-top: 15px;
+  }
+
+  .movie-overview {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .modal-right {
+    color: white;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+
+  .ranking {
+    margin-top: 15px;
+    font-size: 36px;
+  }
+
+  .realease_date {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  
+  .modal.enter-done .modal-content {
+    transform: translateY(0);
+  }
+  
+  .modal.exit .modal-content {
+    transform: translateY(-200px);
+  }
+    
+  .modal-title {
+    margin: 0;
+  }
+  
+  .modal-body {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  

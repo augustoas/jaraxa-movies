@@ -1,0 +1,18 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.25s ease-out;
+  margin: 10px;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  margin-top: 5px;
+  color: aliceblue;
+  font-size: 16px;
+}
